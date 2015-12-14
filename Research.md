@@ -40,16 +40,19 @@
 
 ###Analysis
 ####Content Creators
-* Fluid
-  * Images must be capable of being cropped / resized
-* Responsive
+* Fluid - Restrictions on content, but faster to produce
+  * Must create images capable of being cropped / resized
+  * Can't control how exactly image will look for a specific device 
+* Responsive - Control of output + flexibility when designing
   * Must create multiple versions of each image in orer to suit each viewport
 
 ####Developers
-* Fluid
+* Fluid - Less maintainance required, but harder to set up
   * Must test images / text scale nicely to any resolution with new pages / content
-    * Limit flow of text / size of images to improve user experience, i.e. preventing text from taking up the enitre width of a 21:9 2560X1080 screen
-  * Must create layout with good UX for mobile, but enough functionality for desktop 
-* Responsive
+    * Limit flow of text / size of images to improve user experience, i.e. preventing text from taking up the enitre width of a widescreen monitor
+  * Must create layout with good UX for mobile, but enough functionality for desktop
+    * Must make decision between image cropping vs. image scaling / resizing
+  * Must adjust layout with all possible viewports in mind
+* Responsive - Straight-forward to set up, but harder to expand
   * Must tweak layout for each viewport with new pages
-  * Must make sure new resolutions will render page properly, i.e. preventing a new mobile phone resolution / aspect ratio from displaying white bars along the sides
+  * Must make sure new resolutions will render page properly, i.e. prevent a new mobile phone resolution / aspect ratio from displaying white bars along the sides
