@@ -37,3 +37,19 @@
   * On the bigger jump, only the left side is fluid (the image gets cut off), allowing for the right side to have content that can not get cut off, i.e. the author’s picture 
 * [Text adaptation example](http://www.highresolution.info/webdesign/sandbox/yaml_grids.html)
   * Shows some design challenges when moving text
+
+###Analysis
+####Content Creators
+* Fluid
+  * Images must be capable of being cropped / resized
+* Responsive
+  * Must create multiple versions of each image in orer to suit each viewport
+
+####Developers
+* Fluid
+  * Must test images / text scale nicely to any resolution with new pages / content
+    * Limit flow of text / size of images to improve user experience, i.e. preventing text from taking up the enitre width of a 21:9 2560X1080 screen
+  * Must create layout with good UX for mobile, but enough functionality for desktop 
+* Responsive
+  * Must tweak layout for each viewport with new pages
+  * Must make sure new resolutions will render page properly, i.e. preventing a new mobile phone resolution / aspect ratio from displaying white bars along the sides
