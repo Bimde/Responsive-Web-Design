@@ -1,9 +1,12 @@
 <DOCTYPE html>
 <html>
 <style>
-body, html {
-	margin: 0;
+body, html{
+	margin: 0 auto;
 	padding: 0;
+}
+html {
+	background-image: url("http://bgfons.com/upload/lines_texture1095.jpg");s
 }
 div {
 	background-color: lightgrey;
@@ -17,11 +20,24 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+#overflow {
+	overflow: hidden;
+	background-color: transparent;
+	display: block;
+	text-align: center;
+	float: none;
+	margin: 0;
+	padding: 0;
+}
 #outer {
-	width: 100%;
 	margin: 0;
 	padding: 0;
 	background-color: transparent;
+	max-width: 1000px;
+	width: 100%;
+	position: relative;
+	left: 50%;
+	float: left;
 }
 .header {
 	display: block;
@@ -30,16 +46,24 @@ img {
 	width: 100%;
 	margin: 0px;
 	margin-bottom: 5px;
+	padding: 0px;
 }
 
 .big {
 	width: 64%;
+	position: relative;
+	left: -50%;
+	float: left;
 }
 .small {
 	width: 32%;
+	position: relative;
+	left: -50%;
+	float: left;
 }
 </style>
 <body>
+<div id="overflow">
 <div class="header"></div>
 <div id="outer">
 	<div class = "big">
@@ -63,6 +87,7 @@ img {
 	<div class = "small"></div>
 	<div class = "big"></div>
 	<div class = "small"></div>
+</div>
 </div>
 </body>
 </html>
