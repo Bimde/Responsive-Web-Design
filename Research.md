@@ -36,7 +36,4 @@
   * Has mostly fluid design with one jump
   * On the bigger jump, only the left side is fluid (the image gets cut off), allowing for the right side to have content that can not get cut off, i.e. the author’s picture 
 * [Text adaptation example](http://www.highresolution.info/webdesign/sandbox/yaml_grids.html)
-  * Shows some design challenges when moving text 
-
-1: http://studio.uxpin.com/blog/responsive-vs-adaptive-design-whats-best-choice-designers/
-
+  * Shows some design challenges when moving text
