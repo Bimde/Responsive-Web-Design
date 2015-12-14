@@ -22,7 +22,7 @@
 * Only create one version of content
 
 ####Cons
-* Must download all elements required for all viewports (performs worse) [1](http://studio.uxpin.com/blog/responsive-vs-adaptive-design-whats-best-choice-designers/)
+* Must download all elements required for all viewports (**performs worse**) [1](http://studio.uxpin.com/blog/responsive-vs-adaptive-design-whats-best-choice-designers/)
   *Potential work arounds using media queries
 * Must test every possible width to ensure no user has poor experience
 * Content must either be able to be:
@@ -37,6 +37,7 @@
   * On the bigger jump, only the left side is fluid (the image gets cut off), allowing for the right side to have content that can not get cut off, i.e. the author’s picture 
 * [Text adaptation example](http://www.highresolution.info/webdesign/sandbox/yaml_grids.html)
   * Shows some design challenges when moving text
+* [Example](http://upstatement.com/) with consistent image resizing
 
 ###Analysis
 ####Content Creators
@@ -56,3 +57,8 @@
 * Responsive - Straight-forward to set up, but harder to expand
   * Must tweak layout for each viewport with new pages
   * Must make sure new resolutions will render page properly, i.e. prevent a new mobile phone resolution / aspect ratio from displaying white bars along the sides
+
+###Solutions
+* Using a mix of both layouts, as suggested by various outlets. Implementations include:
+  * Google's '[Mostly fluid](https://developers.google.com/web/fundamentals/design-and-ui/responsive/patterns/mostly-fluid?hl=en)' design
+  * [Boston Globe's approach](http://upstatement.com/blog/2012/01/how-to-approach-a-responsive-design/)
