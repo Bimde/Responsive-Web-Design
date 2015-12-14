@@ -13,6 +13,7 @@
 
 ####Examples
 * [York Region site](http://york.ca)
+* [VML](http://www.vml.com/)
 
 ###Fluid Design  (adjusts to any screen size)
 
@@ -22,18 +23,20 @@
 
 ####Cons
 * Must download all elements required for all viewports (performs worse) [1](http://studio.uxpin.com/blog/responsive-vs-adaptive-design-whats-best-choice-designers/)
-  * Potential work arounds using media queries
+  *Potential work arounds using media queries
 * Must test every possible width to ensure no user has poor experience
 * Content must either be able to be:
-  * Cut off (ex. )
-  * or cropped (ex. )
+  * Cropped (i.e. [ykr portal fluid design demo](http://ykr-dev-portal4.devyork.ca:10039/wps/portal/ctcdemo/About/!ut/p/z1/tZNdb4IwFIb_CrvgkvTUAuIlLtmcEbKp27Q3pkDBTlsQq3H79ZbEZLsRZ-Z61eY85z0fzYsomiGq2F4UTItSsbV5z6m_mAC4_T4O4bEPGJ56OH6IvQgTH9B7G-C9-IieD4-Ih94QRTRVutJLNE91amVcljZ835al5DZUdVnUTNqQ8a0olKVrlq4MVirNlbZht-W1xQ8VrwVXKbdOWL5TGZOGYOttU6hKRWbKBFng4Zw5uJsRx-32sJPwJHACxpIM93yPu7h9sKZz-ofFNECTD2dO2OTTthLu2D8BLRqtCh4hFwDze3MzRfcHMJwSAzz7UTQGAhijyZVrbRccdG4tCDcWxLfuEJOrBYeXTGVc26mj-6gwskwvHaHyEs1-4xGTKT42GxoaUzbeOmg0-19XVvJVBuRTOKvx4GuaS7mIY4clARBvvR-Fd0eCOGcV/dz/d5/L2dBISEvZ0FBIS9nQSEh/))
+  * or resized (ex. [Expression Engine's site](https://ellislab.com/expressionengine))
+    * The header gets cut off but the content below scales on window resize 
 * Can't make adjustments to specific viewports
 
 ####Examples
-* http://www.whatcounts.com/wp-content/uploads/2015/04/perform-better.htm
-* http://hoovermason.com/#/
+* [Graphics heavy demo](http://hoovermason.com/#/)
   * Has mostly fluid design with one jump
   * On the bigger jump, only the left side is fluid (the image gets cut off), allowing for the right side to have content that can not get cut off, i.e. the author’s picture 
+* [Text adaptation example](http://www.highresolution.info/webdesign/sandbox/yaml_grids.html)
+  * Shows some design challenges when moving text 
 
 1: http://studio.uxpin.com/blog/responsive-vs-adaptive-design-whats-best-choice-designers/
 
