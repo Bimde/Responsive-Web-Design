@@ -22,14 +22,14 @@
 * Only create one version of content
 
 ####Cons
-* Must download all elements required for all viewports (**performs worse**) [1](http://studio.uxpin.com/blog/responsive-vs-adaptive-design-whats-best-choice-designers/)
-  *Potential work arounds using media queries
+* User's will download all elements required for all viewports (**performs worse**) [1](http://studio.uxpin.com/blog/responsive-vs-adaptive-design-whats-best-choice-designers/)
+  * Potential work arounds using media queries
 * Must test every possible width to ensure no user has poor experience
 * Content must either be able to be:
   * Cropped (i.e. [ykr portal fluid design demo](http://ykr-dev-portal4.devyork.ca:10039/wps/portal/ctcdemo/About/!ut/p/z1/tZNdb4IwFIb_CrvgkvTUAuIlLtmcEbKp27Q3pkDBTlsQq3H79ZbEZLsRZ-Z61eY85z0fzYsomiGq2F4UTItSsbV5z6m_mAC4_T4O4bEPGJ56OH6IvQgTH9B7G-C9-IieD4-Ih94QRTRVutJLNE91amVcljZ835al5DZUdVnUTNqQ8a0olKVrlq4MVirNlbZht-W1xQ8VrwVXKbdOWL5TGZOGYOttU6hKRWbKBFng4Zw5uJsRx-32sJPwJHACxpIM93yPu7h9sKZz-ofFNECTD2dO2OTTthLu2D8BLRqtCh4hFwDze3MzRfcHMJwSAzz7UTQGAhijyZVrbRccdG4tCDcWxLfuEJOrBYeXTGVc26mj-6gwskwvHaHyEs1-4xGTKT42GxoaUzbeOmg0-19XVvJVBuRTOKvx4GuaS7mIY4clARBvvR-Fd0eCOGcV/dz/d5/L2dBISEvZ0FBIS9nQSEh/))
   * or resized (ex. [Expression Engine's site](https://ellislab.com/expressionengine))
     * The header gets cut off but the content below scales on window resize 
-* Can't make adjustments to specific viewports
+* Can't make adjustments to specific viewports without affecing others
 
 ####Examples
 * [Graphics heavy demo](http://hoovermason.com/#/)
@@ -53,7 +53,7 @@
     * Limit flow of text / size of images to improve user experience, i.e. preventing text from taking up the enitre width of a widescreen monitor
   * Must create layout with good UX for mobile, but enough functionality for desktop
     * Must make decision between image cropping vs. image scaling / resizing
-  * Must adjust layout with all possible viewports in mind
+  * Must make any adjustments to layout with all possible viewports in mind
 * Responsive - Straight-forward to set up, but harder to expand
   * Must tweak layout for each viewport with new pages
   * Must make sure new resolutions will render page properly, i.e. prevent a new mobile phone resolution / aspect ratio from displaying white bars along the sides
@@ -62,3 +62,4 @@
 * Using a mix of both layouts, as suggested by various outlets. Implementations include:
   * Google's '[Mostly fluid](https://developers.google.com/web/fundamentals/design-and-ui/responsive/patterns/mostly-fluid?hl=en)' design
   * [Boston Globe's approach](http://upstatement.com/blog/2012/01/how-to-approach-a-responsive-design/)
+* [My example](https://github.com/Bimde/Responsive-Web-Design/blob/master/Responsive%20%2B%20Fluid%20Web%20Design.html) (using a combination of both fluid and responsive design)
