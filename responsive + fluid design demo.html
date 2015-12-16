@@ -28,11 +28,12 @@
 		}
 
 		.content {
-			width: 65.5%;
+			width: 64%;
 		}
 
 		.sidebar {
-			width: 32.5%;
+			margin-left: 3.5%;
+			width: 30%;
 		}
 
 		.contentElement {
@@ -40,6 +41,7 @@
 			margin: 0.5% 0;
 			display: inline-block;
 			background-color: #E8E8E8;
+			padding: 2%;
 		}
 		.sidebarElement {
 			width: 100%;
@@ -50,39 +52,26 @@
 		}
 
 		.wrapper {
+			left: -50%;
 			width: 100%;
 			display: inline-block;
-			position:relative;
-			padding: bottom: ;
-		}
-
-		.wrapper:after {
-			padding-top: 23.413111342%;
-			display: block;
-			content: '';
-		}
-
-		.header {
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			right: 0;
-			left: 0;
-			background-color: green;
-			width: 100%;
-			min-height: 100px;
-
-			background-image: url(http://www.stormwebsitedesign.com/web-design-aberdeen-images/aberdeen-web-design-storm-top-banner.jpg);
-			background-size: contain;
-			background-position: center;
-			background-repeat: no-repeat;
-		}
-
-		h1 {
-			text-align: center;
-			font-size: 3em;
+			position: relative;
 			margin: 0;
-			padding: 2%;
+			padding: 0;
+		}
+
+		img {
+			max-width: 400px;
+			width: 100%;
+			display: block;
+			margin: 2% auto;
+		}
+
+		img.header {
+			margin: 0 0;
+			padding: 0;
+			background-color:transparent;
+			max-width: 1200px;
 		}
 
 		button {
@@ -98,12 +87,6 @@
 			text-decoration: none;
 		}
 
-		img {
-			max-width: 100%;
-			display: block;
-			margin: 2% auto;
-		}
-
 		@media (max-width: 600px) {
 			.content {
 				width: 100%;
@@ -115,8 +98,8 @@
 	</style>
 	<body>
 		<div class="overflow">
-			<div class="wrapper"><div class="stretch"><div class="header"><h1>Responsive + Adaptive Web Design</h1></div></div></div>
 			<div class="outer">
+			<div class="header"><div class="wrapper"><img class="header" src="http://www.stormwebsitedesign.com/web-design-aberdeen-images/aberdeen-web-design-storm-top-banner.jpg"></img></div></div>
 				<div class="content">
 					<div class="contentElement">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et pretium metus, vel posuere elit. Mauris nisl est, fermentum eu egestas feugiat, molestie sed dui. Quisque ullamcorper lectus purus, et pretium dui condimentum at. Proin vitae tempus quam, lacinia varius nibh. Nunc quis justo dictum, ornare libero ut, dapibus orci. Vivamus et finibus metus. Curabitur a odio vulputate libero tincidunt euismod. Proin ac tincidunt nibh. Suspendisse malesuada nibh fermentum dolor aliquam, at aliquam nulla euismod. Aliquam tincidunt, eros eu mattis imperdiet, mauris lacus malesuada mi, non tempus odio est ut ligula.
