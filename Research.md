@@ -62,4 +62,7 @@
 * Using a mix of both layouts, as suggested by various outlets. Implementations include:
   * Google's '[Mostly fluid](https://developers.google.com/web/fundamentals/design-and-ui/responsive/patterns/mostly-fluid?hl=en)' design
   * [Boston Globe's approach](http://upstatement.com/blog/2012/01/how-to-approach-a-responsive-design/)
-* [My example](https://github.com/Bimde/Responsive-Web-Design/blob/master/Responsive%20%2B%20Fluid%20Web%20Design.html) (using a combination of both fluid and responsive design)
+* [My example](https://b6ed4c3b83435ede471472942e6392f1667cc0d2.googledrive.com/host/0B8Lpd3aKTxDRYlYzVW5nZkdFNlU/) (using a combination of both fluid and responsive design)
+  * Images scale on window resize without getting cropped (both the header and the image in the paragraph)
+  * Sidebar moves to bottom when window width is less than 600px
+  * View the code [here](https://github.com/Bimde/Responsive-Web-Design/blob/master/Responsive%20%2B%20Fluid%20Web%20Design.html)
