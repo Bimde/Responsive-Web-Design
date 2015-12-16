@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+<!--Prevents mobile users from being able to zoom in-->
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 	<style>
 		body , html {
 			margin: 0;
@@ -45,13 +47,25 @@
 			display: inline-block;
 			background-color: #E8E8E8;
 			padding: 2%;
+			
+			/* 	
+			*	Can't use % because the width and height aren't
+			*	guaranteed to be the same 
+			*/
+			border-radius: 5px;
 		}
 		.sidebarElement {
 			width: 100%;
 			margin: 0.5% 0;
 			height: 100px;
 			display: inline-block;
-			background-color: red;
+			background-color: transparent;
+
+			/* 	
+			*	Can't use % because the width and height aren't
+			*	guaranteed to be the same 
+			*/
+			border-radius: 5px;
 		}
 
 		.header {
@@ -87,14 +101,15 @@
 			height: 100%;
 			background-color: #383838 ;
 			color: white;
-			font-size: 2em;			
+			font-size: 2em;
+			border-radius: 5px;			
 		}
 
 		a {
 			text-decoration: none;
 		}
 
-		@media (max-width: 600px) {
+		@media (max-width: 599px) {
 			.content {
 				width: 97%;
 				margin: 0 auto;
