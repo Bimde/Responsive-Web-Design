@@ -4,7 +4,8 @@
 		body , html {
 			margin: 0;
 			padding: 0;
-			background-color: grey;
+			background-color: #66CC99;
+			min-width: 200px;
 		}
 		div {
 			padding: 0;
@@ -32,6 +33,7 @@
 		}
 
 		.sidebar {
+			margin-top: 0.4%;
 			margin-left: 3.5%;
 			width: 30%;
 		}
@@ -51,6 +53,10 @@
 			background-color: red;
 		}
 
+		.header {
+			margin-bottom: -1%;
+		}
+
 		.wrapper {
 			left: -50%;
 			width: 100%;
@@ -61,7 +67,7 @@
 		}
 
 		img {
-			max-width: 400px;
+			max-width: 450px;
 			width: 100%;
 			display: block;
 			margin: 2% auto;
@@ -89,22 +95,31 @@
 
 		@media (max-width: 600px) {
 			.content {
-				width: 95%;
+				width: 97%;
 				margin: 0 auto;
 			}
 			.sidebar{
-				width: 95%;
+				width: 97%;
 				margin: 0 2%;
 			}
 			img {
 				max-width: 100%;
 			}
 		}
+
+		@media (min-width: 1200px) {
+			img.header {
+				margin: 0 0;
+				padding: 0;
+				background-color:transparent;
+				max-width: 1200px;
+			}
+		}
 	</style>
 	<body>
 		<div class="overflow">
 			<div class="outer">
-			<div class="header"><div class="wrapper"><img class="header" src="http://www.stormwebsitedesign.com/web-design-aberdeen-images/aberdeen-web-design-storm-top-banner.jpg"></img></div></div>
+			<div class="header"><div class="wrapper"><img class="header" src="https://www.fiware.org/wp-content/uploads/2014/12/FIWARE-Accelerate-Banner.png"></img></div></div>
 				<div class="content">
 					<div class="contentElement">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dapibus finibus erat, a blandit arcu egestas sit amet. Nam nec eleifend velit. Nunc mollis ultricies viverra. Pellentesque velit ex, posuere ut justo quis, cursus pellentesque nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin fringilla pulvinar turpis, et auctor lectus. Donec ac auctor nibh. Fusce viverra lobortis tellus, sed vehicula augue luctus vitae. Sed id arcu id ligula mattis sodales. Nunc faucibus varius ex, vitae faucibus augue tristique semper. Nam varius justo quis condimentum consequat. Nulla facilisi. Nam at mattis justo. Pellentesque quis elementum ligula, quis vulputate dui.
