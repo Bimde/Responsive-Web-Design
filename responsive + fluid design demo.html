@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<style>
+		body , html {
+			margin: 0;
+			padding: 0;
+			background-color: grey;
+		}
+		div {
+			padding: 0;
+			margin: 0;
+		}
+		.overflow {
+			overflow: hidden;
+		}
+		.outer {
+			position:relative;
+			left: 50%;
+			max-width: 1200px;
+		}
+		.content, .sidebar {
+			left: -50%;
+			position: relative;
+			float: left;
+			display: inline-block;
+			margin: 0.2%;
+			padding: 0.2%;
+		}
+
+		.content {
+			width: 65.5%;
+		}
+
+		.sidebar {
+			width: 32.5%;
+		}
+
+		.contentElement {
+			width: 100%;
+			margin: 0.5% 0;
+			display: inline-block;
+			background-color: #E8E8E8;
+		}
+		.sidebarElement {
+			width: 100%;
+			margin: 0.5% 0;
+			height: 100px;
+			display: inline-block;
+			background-color: red;
+		}
+
+		.header {
+			display: block;
+			background-color: green;
+			width: 100%;
+			min-height: 100px;
+		}
+
+		h1 {
+			text-align: center;
+			font-size: 3em;
+			margin: 0;
+			padding: 2%;
+		}
+
+		button {
+			display: block;
+			width: 100%;
+			height: 100%;
+			background-color: #383838 ;
+			color: white;
+			font-size: 2em;			
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		img {
+			max-width: 100%;
+			display: block;
+			margin: 2% auto;
+		}
+
+		@media (max-width: 600px) {
+			.content {
+				width: 100%;
+			}
+			.sidebar{
+				width: 100%;
+			}
+		}
+	</style>
+	<body>
+		<div class="overflow">
+			<div class="header"><h1>Responsive + Adaptive Web Design</h1></div>
+			<div class="outer">
+				<div class="content">
+					<div class="contentElement">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et pretium metus, vel posuere elit. Mauris nisl est, fermentum eu egestas feugiat, molestie sed dui. Quisque ullamcorper lectus purus, et pretium dui condimentum at. Proin vitae tempus quam, lacinia varius nibh. Nunc quis justo dictum, ornare libero ut, dapibus orci. Vivamus et finibus metus. Curabitur a odio vulputate libero tincidunt euismod. Proin ac tincidunt nibh. Suspendisse malesuada nibh fermentum dolor aliquam, at aliquam nulla euismod. Aliquam tincidunt, eros eu mattis imperdiet, mauris lacus malesuada mi, non tempus odio est ut ligula.
+
+						Pellentesque eu magna luctus, mattis est et, cursus urna. Cras sodales dui sapien, sit amet condimentum nisl egestas at. Etiam vel urna id est aliquet mattis. Nam eleifend diam eu metus pulvinar, ut finibus nibh porttitor. Suspendisse potenti. Nam laoreet ante ut lobortis elementum. Etiam a nisl cursus, lacinia quam in, mollis nisl. Ut varius quis sapien non luctus. Aenean urna magna, iaculis ut fermentum nec, malesuada varius massa. Curabitur scelerisque, massa sed pretium consequat, erat nibh aliquet ligula, ultrices pellentesque enim tellus ac nibh. Sed luctus quis nunc quis varius. Nunc et pharetra elit, vitae dignissim metus.
+
+						Fusce efficitur dictum dui quis fermentum. In hac habitasse platea dictumst. Sed et tincidunt odio, sit amet vulputate libero. Aliquam pretium aliquam sem, vitae ultricies est volutpat ac. Donec ac leo semper, bibendum quam ut, egestas odio. Suspendisse accumsan tellus id diam interdum, non porttitor mi tincidunt. Donec eleifend augue sed purus ullamcorper, nec porta diam efficitur. Morbi tempor massa vitae commodo scelerisque. Sed auctor eget ex id ornare. Proin et enim efficitur, ornare nisl nec, congue velit. Curabitur eget nisi at ligula eleifend pharetra. Sed pretium, diam eget accumsan tempus, nunc lectus luctus metus, sed eleifend velit metus vel lorem. Donec laoreet interdum auctor. Praesent congue commodo ipsum, in ultricies tellus condimentum vel.
+
+						Nullam eget nulla accumsan, porta nunc venenatis, volutpat purus. Quisque et felis enim. Proin suscipit turpis laoreet gravida volutpat. Sed viverra, enim ullamcorper faucibus porttitor, dolor leo rhoncus neque, at scelerisque ex urna sed nunc. Etiam eget accumsan tellus, aliquet maximus felis. Quisque ac tempus erat, quis finibus eros. Maecenas nisl ex, laoreet non lorem nec, convallis convallis tortor. In vulputate orci ut magna ultrices pharetra nec nec nisl. Morbi posuere nisl id nunc mattis, volutpat porttitor velit aliquam. Aenean congue tempus turpis. Curabitur quis metus lacus.
+
+						Nam convallis ultrices egestas. Quisque fermentum sem augue, nec convallis arcu mattis sit amet. Vestibulum vitae malesuada diam. Suspendisse ac consequat risus, vel tempus enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget nulla mattis, ultricies mi eget, luctus urna. Nunc tincidunt justo metus, id vulputate massa tempus ac.
+					</div>
+					<div class="contentElement">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dapibus finibus erat, a blandit arcu egestas sit amet. Nam nec eleifend velit. Nunc mollis ultricies viverra. Pellentesque velit ex, posuere ut justo quis, cursus pellentesque nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin fringilla pulvinar turpis, et auctor lectus. Donec ac auctor nibh. Fusce viverra lobortis tellus, sed vehicula augue luctus vitae. Sed id arcu id ligula mattis sodales. Nunc faucibus varius ex, vitae faucibus augue tristique semper. Nam varius justo quis condimentum consequat. Nulla facilisi. Nam at mattis justo. Pellentesque quis elementum ligula, quis vulputate dui.
+
+						Sed viverra velit quis ipsum pellentesque porttitor. Aenean a quam dolor. Nullam pellentesque nisl id volutpat consequat. In sit amet mollis nunc. Nam vitae leo sed nulla dapibus dignissim id et purus. Morbi eleifend ipsum lectus, at venenatis neque venenatis a. Aliquam aliquet nunc quis viverra rutrum. Donec interdum leo tristique orci viverra, faucibus fermentum magna lacinia. Maecenas ut nunc augue. Curabitur varius vel urna non molestie. Morbi id tincidunt felis, in blandit ex. Fusce eget malesuada nibh.
+
+						<img src="http://www.kevinandamanda.com/whatsnew/wp-content/uploads/2014/06/eiffel-tower-paris-france-26.jpg"></img>
+
+						Aliquam commodo diam nibh. Donec accumsan posuere volutpat. Suspendisse potenti. Donec viverra mauris arcu. Vestibulum ac quam eleifend, volutpat nunc nec, dapibus sapien. Pellentesque a laoreet libero. Quisque consectetur, magna nec fermentum posuere, arcu mi molestie neque, vitae mattis lorem enim ut dui. Nulla vel odio eros. In porttitor, neque vel semper congue, eros odio laoreet tellus, a vestibulum sem diam aliquam mauris. Aenean vel urna eget augue tincidunt ornare ut vel turpis. Etiam molestie luctus lacus sed commodo. Ut faucibus aliquam rutrum. Proin volutpat ligula at ultrices placerat. Suspendisse vel pulvinar sapien.
+
+						Vestibulum diam arcu, tempus eu sem efficitur, aliquam consequat purus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec fermentum dui ac ante aliquet accumsan. Nunc ac auctor sapien, vitae suscipit lorem. Fusce sed nulla hendrerit felis mollis fringilla. In nec eleifend enim. Sed at risus vitae urna pharetra mattis eu sed magna.
+
+						Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur lorem dolor, dictum eu rhoncus vitae, commodo eget dolor. Phasellus sit amet leo nibh. Donec ac congue nunc. Maecenas sagittis dui nec maximus dignissim. Phasellus pulvinar tortor nunc, rhoncus molestie lacus maximus quis. Praesent eget tempus ipsum. Ut condimentum ipsum sodales ornare lobortis. Donec sit amet neque porta, tempor libero vel, mattis dolor. In imperdiet tincidunt tincidunt. Quisque feugiat lacus neque, et aliquet mi consectetur quis. Duis eu dui eget est eleifend congue eget eget urna. Proin elementum ante neque, a suscipit ligula vestibulum a. Phasellus rutrum metus non purus cursus, non tristique augue sollicitudin. Nunc in tempus felis.
+					</div>
+
+				</div>
+				<div class="sidebar">
+					<div class="sidebarElement"><a href="https://google.ca"><button>Google</button></a></div>
+					<div class="sidebarElement"><a href="https://linkedin.com"><button>LinkedIn</button></a></div>
+					<div class="sidebarElement"><a href="http://techradar.com"><button>TechRadar</button></a></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
