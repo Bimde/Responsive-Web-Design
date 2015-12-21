@@ -109,6 +109,14 @@
 			text-decoration: none;
 		}
 
+		#replaceDesktop {
+			display: inline-block;
+		}
+
+		#replaceMobile{
+			display: none;
+		}
+
 		@media (max-width: 599px) {
 			.content {
 				width: 97%;
@@ -120,6 +128,12 @@
 			}
 			img {
 				max-width: 100%;
+			}
+			#replaceDesktop {
+				display:none;
+			}
+			#replaceMobile{
+				display: inline-block;
 			}
 		}
 	</style>
@@ -143,6 +157,11 @@
 					</div>
 					<div class="contentElement">
 						<img src = "http://api.ning.com/files/P577YmSrEObh-CxByezlHNtAk-1Yy*6zb2m*ckHXVF-MWHnIVYrjbLyajs*S5a78vA71kUNqQJdPZaaGiiPWYXnrLk2YSU0J/5.5hx46.25wposter.jpg">
+						<p>
+							Images like the one above have a hard time scaling to mobile devices screens. To solve this problem, you need content creators to make seperate banners for mobile devices (implementation of this below).
+						</p>
+						<img id="replaceDesktop" src = "http://api.ning.com/files/P577YmSrEObh-CxByezlHNtAk-1Yy*6zb2m*ckHXVF-MWHnIVYrjbLyajs*S5a78vA71kUNqQJdPZaaGiiPWYXnrLk2YSU0J/5.5hx46.25wposter.jpg">
+						<img id="replaceMobile" src = "http://i.imgur.com/gmS6023.jpg">
 					</div>
 				</div>
 				<div class="sidebar">
@@ -155,18 +174,17 @@
 	</body>
 	<script>
 		function init() {
-
 			// Finds all 'banner-style' images and allows their width to become 
-			// larger than the 450px set for other images
+			// larger than maximum 450px set for other images
 			var list = document.getElementsByTagName("IMG");
 			for(var img = 0; img < list.length; img++) {
 				var temp = list[img];
-					if(temp.getAttribute("class") != "header") {
-						if(temp.width > temp.height) {
-							temp.style.maxWidth = "100%";
-							console.log(temp.style.maxWidth);
-						}
+				if(temp.getAttribute("class") != "header") {
+					if(temp.width > temp.height) {
+						temp.style.maxWidth = "100%";
+						console.log(temp.style.maxWidth);
 					}
+				}
 			}
 		}
 
