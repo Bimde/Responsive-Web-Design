@@ -9,14 +9,14 @@
 			background-color: #66CC99;
 			min-width: 200px;
 		}
-		div {
+		.overflow {
 			padding: 0;
 			margin: 0;
-		}
-		.overflow {
 			overflow: hidden;
 		}
 		.outer {
+			padding: 0;
+			margin: 0;
 			position: relative;
 			left: 50%;
 			max-width: 1200px;
@@ -31,11 +31,15 @@
 		}
 
 		.content {
+			margin: 0;
+			padding: 0;
 			margin-top: 1%;
 			width: 64%;
 		}
 
 		.sidebar {
+			padding: 0;
+			margin: 0;
 			margin-top: 1.2%;
 			margin-left: 2.5%;
 			width: 32%;
@@ -55,6 +59,7 @@
 			border-radius: 5px;
 		}
 		.sidebarElement {
+			padding: 0;
 			width: 100%;
 			margin: 0.5% 0;
 			height: 100px;
@@ -69,6 +74,8 @@
 		}
 
 		.header {
+			padding: 0;
+			margin: 0;
 			margin-bottom: -1%;
 		}
 
@@ -129,6 +136,9 @@
 			img {
 				max-width: 100%;
 			}
+		}
+
+		@media (max-width: 799px) {
 			#replaceDesktop {
 				display:none;
 			}
@@ -158,16 +168,23 @@
 					<div class="contentElement">
 						<img src = "http://api.ning.com/files/P577YmSrEObh-CxByezlHNtAk-1Yy*6zb2m*ckHXVF-MWHnIVYrjbLyajs*S5a78vA71kUNqQJdPZaaGiiPWYXnrLk2YSU0J/5.5hx46.25wposter.jpg">
 						<p>
-							Images like the one above have a hard time scaling to mobile devices screens. To solve this problem, you need content creators to make seperate banners for mobile devices (implementation of this below).
+							Images like the one above have a hard time scaling to mobile devices screens. To solve this problem, you need content creators to make seperate banners for mobile devices (implementation of this below, which changes to the mobile banner once the width of the window is below 800px).
 						</p>
 						<img id="replaceDesktop" src = "http://api.ning.com/files/P577YmSrEObh-CxByezlHNtAk-1Yy*6zb2m*ckHXVF-MWHnIVYrjbLyajs*S5a78vA71kUNqQJdPZaaGiiPWYXnrLk2YSU0J/5.5hx46.25wposter.jpg">
 						<img id="replaceMobile" src = "http://i.imgur.com/gmS6023.jpg">
+					</div>
+					<div class="contentElement">
+						<!-- AccuWeather widget -->
+						<a href="http://www.accuweather.com/en/us/new-york-ny/10007/weather-forecast/349727" class="aw-widget-legal"></a><div id="awcc1450713807408" class="aw-widget-current"  data-locationkey="" data-unit="c" data-language="en-us" data-useip="true" data-uid="awcc1450713807408"></div>
+						<script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script>
+						<p>
+							Widgets / portlets must be designed to take advantage to all available space, as seen above, from AccuWeather's weather widget. If not, the widget won't provide a good UX (as there will be unused bars along the sides, resulting in wasted space).
+						</p>
 					</div>
 				</div>
 				<div class="sidebar">
 					<div class="sidebarElement"><a href="https://google.ca"><button>Google</button></a></div>
 					<div class="sidebarElement"><a href="https://linkedin.com"><button>LinkedIn</button></a></div>
-					<div class="sidebarElement"><a href="http://techradar.com"><button>TechRadar</button></a></div>
 				</div>
 			</div>
 		</div>
