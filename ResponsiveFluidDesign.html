@@ -141,7 +141,9 @@
 
 						Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur lorem dolor, dictum eu rhoncus vitae, commodo eget dolor. Phasellus sit amet leo nibh. Donec ac congue nunc. Maecenas sagittis dui nec maximus dignissim. Phasellus pulvinar tortor nunc, rhoncus molestie lacus maximus quis. Praesent eget tempus ipsum. Ut condimentum ipsum sodales ornare lobortis. Donec sit amet neque porta, tempor libero vel, mattis dolor. In imperdiet tincidunt tincidunt. Quisque feugiat lacus neque, et aliquet mi consectetur quis. Duis eu dui eget est eleifend congue eget eget urna. Proin elementum ante neque, a suscipit ligula vestibulum a. Phasellus rutrum metus non purus cursus, non tristique augue sollicitudin. Nunc in tempus felis.
 					</div>
-
+					<div class="contentElement">
+						<img src = "http://api.ning.com/files/P577YmSrEObh-CxByezlHNtAk-1Yy*6zb2m*ckHXVF-MWHnIVYrjbLyajs*S5a78vA71kUNqQJdPZaaGiiPWYXnrLk2YSU0J/5.5hx46.25wposter.jpg">
+					</div>
 				</div>
 				<div class="sidebar">
 					<div class="sidebarElement"><a href="https://google.ca"><button>Google</button></a></div>
@@ -151,4 +153,23 @@
 			</div>
 		</div>
 	</body>
+	<script>
+		function init() {
+
+			// Finds all 'banner-style' images and allows their width to become 
+			// larger than the 450px set for other images
+			var list = document.getElementsByTagName("IMG");
+			for(var img = 0; img < list.length; img++) {
+				var temp = list[img];
+					if(temp.getAttribute("class") != "header") {
+						if(temp.width > temp.height) {
+							temp.style.maxWidth = "100%";
+							console.log(temp.style.maxWidth);
+						}
+					}
+			}
+		}
+
+		window.onload = init;
+	</script>
 </html>
