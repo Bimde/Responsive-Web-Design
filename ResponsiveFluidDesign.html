@@ -41,7 +41,7 @@
 			padding: 0;
 			margin: 0;
 			margin-top: 1.2%;
-			margin-left: 2.5%;
+			margin-left: 3%;
 			width: 32%;
 		}
 
@@ -138,6 +138,7 @@
 			}
 		}
 
+		/* Changes the banner image exmaple to be mobile version */
 		@media (max-width: 799px) {
 			#replaceDesktop {
 				display:none;
@@ -174,14 +175,19 @@
 						<img id="replaceMobile" src = "http://i.imgur.com/gmS6023.jpg">
 					</div>
 					<div class="contentElement">
-						<!-- AccuWeather widget -->
-						<a href="http://www.accuweather.com/en/free-weather-widgets" class="aw-widget-legal">AccuWeather Widget (if you are seeing this the widget hasn't loaded properly), downloading the html file and launching it locally will solve the problem.</a><div id="awcc1450713807408" class="aw-widget-current"  data-locationkey="" data-unit="c" data-language="en-us" data-useip="true" data-uid="awcc1450713807408"></div>
+						<a href="http://www.accuweather.com/en/free-weather-widgets" class="aw-widget-legal">
+							AccuWeather Widget (if you are seeing this the widget hasn't loaded properly), downloading the html file and launching it locally will solve the problem.
+						</a>
+						<div id="awcc1450713807408" class="aw-widget-current"  data-locationkey="" data-unit="c" data-language="en-us" data-useip="true" data-uid="awcc1450713807408"></div>
 						<script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script>
 						<p>
 							Widgets / portlets must be designed to take advantage to all available space, as seen above, from AccuWeather's weather widget. If not, the widget won't provide a good UX (as there will be unused bars along the sides, resulting in wasted space). The example below stays fixed at 500px wide, demonstrating the problems with this implementation.
 						</p>
 						<div style="width: 500px; margin: 0 auto;">
-							<a href="http://www.accuweather.com/en/free-weather-widgets" class="aw-widget-legal">AccuWeather Widget (if you are seeing this the widget hasn't loaded properly), downloading the html file and launching it locally will solve the problem.</a><div id="awcc1450713807408" class="aw-widget-current"  data-locationkey="" data-unit="c" data-language="en-us" data-useip="true" data-uid="awcc1450713807408"></div>
+							<a href="http://www.accuweather.com/en/free-weather-widgets" class="aw-widget-legal">
+								AccuWeather Widget (if you are seeing this the widget hasn't loaded properly), downloading the html file and launching it locally will solve the problem.
+							</a>
+							<div id="awcc1450713807408" class="aw-widget-current"  data-locationkey="" data-unit="c" data-language="en-us" data-useip="true" data-uid="awcc1450713807408"></div>
 							<script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script>
 						</div>
 					</div>
@@ -189,6 +195,7 @@
 				<div class="sidebar">
 					<div class="sidebarElement"><a href="https://google.ca"><button>Google</button></a></div>
 					<div class="sidebarElement"><a href="https://linkedin.com"><button>LinkedIn</button></a></div>
+					<div class="sidebarElement"><a href="http://techradar.com"><button>TechRadar</button></a></div>
 				</div>
 			</div>
 		</div>
@@ -203,7 +210,6 @@
 				if(temp.getAttribute("class") != "header") {
 					if(temp.width > temp.height) {
 						temp.style.maxWidth = "100%";
-						console.log(temp.style.maxWidth);
 					}
 				}
 			}
