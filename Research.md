@@ -22,7 +22,9 @@
 * Only create one version of content
 
 ####Cons
-* User's will download all elements required for all viewports (**performs worse**) [1](http://studio.uxpin.com/blog/responsive-vs-adaptive-design-whats-best-choice-designers/)
+* User's will download all elements required for all viewports (**performs worse**)
+  * [Comparison](http://studio.uxpin.com/blog/responsive-vs-adaptive-design-whats-best-choice-designers/)
+  * [Specific problems](http://www.bypeople.com/responsive-design-problems/) (see section 11)
   * Potential work arounds using media queries
 * Must test every possible width to ensure no user has poor experience
 * Content must either be able to be:
