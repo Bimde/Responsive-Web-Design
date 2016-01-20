@@ -1,5 +1,5 @@
-#Responsive vs. Fluid Web Design
-###Responsive Design (has multiple set viewport widths) 
+#Adaptive vs. Fluid Web Design
+###Adaptive Design (has multiple set viewport widths) 
 ####Pros
 * Allows for mobile obtimization
   * Show specific content tailored to mobile users (ex. 'download our app')
@@ -46,7 +46,7 @@
 * Fluid - Restrictions on content, but faster to produce
   * Must create images capable of being cropped / resized
   * Can't control how exactly image will look for a specific device 
-* Responsive - Control of output + flexibility when designing
+* Adaptive - Control of output + flexibility when designing
   * Must create multiple versions of each image in orer to suit each viewport
 
 ####Developers
